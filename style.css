@@ -490,3 +490,60 @@ h1 {
     color: var(--text);
     font-weight: 600;
 }
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 768px) {
+    /* Reduce padding for mobile */
+    .navbar, .hero, .about-section, .experience-section, .skills-section, .footer {
+        padding: 60px 5%;
+    }
+
+    /* Stack Navigation links */
+    .nav-links {
+        display: none; /* Recommended: Hide links or use a hamburger menu */
+    }
+
+    /* Hero adjustments */
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    /* Stack the About Section (Image on top, text below) */
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-photo {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .bio-details {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* Experience Header stacking */
+    .exp-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .exp-date {
+        font-size: 0.8rem;
+    }
+
+    /* Grid adjustments for Skills */
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
+    }
+
+    .footer h2 {
+        font-size: 2rem;
+    }
+}
