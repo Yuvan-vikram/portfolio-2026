@@ -271,3 +271,222 @@ h1 {
     color: #333;
 }
 
+/* --- About Section --- */
+.about-section {
+    padding: 120px 10%;
+    background: #0a0a0a;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-photo {
+    position: relative;
+    max-width: 400px;
+}
+
+.profile-img {
+    width: 100%;
+    filter: grayscale(100%); /* Keeps it looking formal */
+    transition: filter 0.5s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.profile-img:hover {
+    filter: grayscale(0%);
+}
+
+.photo-border {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent);
+    z-index: 1;
+}
+
+.bio-details {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+}
+
+.detail-item strong {
+    display: block;
+    color: var(--accent);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* --- Education Timeline --- */
+.education-section {
+    padding: 100px 10%;
+}
+
+.timeline {
+    margin-top: 50px;
+    border-left: 1px solid #222;
+    padding-left: 40px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -46px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: var(--accent);
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.timeline-content span {
+    color: var(--text-dim);
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* --- Experience Section --- */
+.experience-section {
+    padding: 100px 10%;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.exp-item {
+    background: var(--surface);
+    border: 1px solid #222;
+    padding: 40px;
+    transition: var(--transition-smooth);
+    position: relative;
+}
+
+.exp-item:hover {
+    border-color: var(--accent);
+    background: #111;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.exp-title-group h3 {
+    font-size: 1.8rem;
+    color: var(--text);
+}
+
+.company {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Status Tags */
+.exp-tag {
+    font-size: 0.7rem;
+    padding: 5px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.status-active {
+    background: rgba(0, 112, 243, 0.1);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+
+.status-learning {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-dim);
+    border: 1px solid #444;
+}
+
+.exp-desc {
+    color: var(--text-dim);
+    max-width: 800px;
+    margin-bottom: 25px;
+}
+
+.exp-tech {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.exp-tech span {
+    font-size: 0.75rem;
+    color: var(--text);
+    background: #222;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+
+/* Specific styling for the learning project to make it look distinct */
+.learning-path {
+    border-style: dashed;
+}
+
+.tech-pill {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-overlay p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 10px 0 20px;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero-description {
+    margin-top: 2rem; /* Replaces the <br/> with consistent space */
+    max-width: 600px;
+    color: var(--text-dim);
+    font-size: 1.1rem;
+}
+
+.hero-description strong {
+    color: var(--text);
+    font-weight: 600;
+}
